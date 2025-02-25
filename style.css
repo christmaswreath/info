@@ -1,0 +1,68 @@
+:root {
+    --accent: #74B8FC;
+    --aero-white: #ffffff7a;
+    --aero-black: #000000bd;
+    --saturation: 100%;
+    --brightness: 100%;
+    --intensity: 80%;
+    --aero-color: rgba( 116, 184, 252, calc(.7 * var(--intensity)) );
+    --aero-accent: color-mix( in srgb, #000, color-mix(in srgb, var(--aero-color) var(--saturation), transparent) var(--brightness) );
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('SegoeUI-Italic.woff2') format('woff2'),
+    url('SegoeUI-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('SegoeUI-Bold.woff2') format('woff2'),
+    url('SegoeUI-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('SegoeUI-BoldItalic.woff2') format('woff2'),
+    url('SegoeUI-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('SegoeUI.woff2') format('woff2'),
+    url('SegoeUI.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('SegoeUI-SemiBold.woff2') format('woff2'),
+    url('SegoeUI-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-image: url("https://files.catbox.moe/zlr1cv.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Segoe UI';
+}
+
+.mainContainer {
+    max-width: 45%;
+    margin-inline: auto;
+}

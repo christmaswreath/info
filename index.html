@@ -7,10 +7,23 @@
         <title>your favorite alien cat's webpage :o</title>
     </head>
 <body>
+
     <div class="mainContainer">
         <div class="window active">
             <div class="title-bar">
-                <div class="title-bar-text">sirblorpisiii.exe</div>
+                <div class="title-bar-text">Untitled - Notepad</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body has-space has-scrollbar field-row-stacked" contenteditable="plaintext-only">
+            </div>
+        </div>
+        <div class="window active infoBox" style="max-width: 600px;">
+            <div class="title-bar">
+                <div class="title-bar-text">A window with contents</div>
                 <div class="title-bar-controls">
                     <button aria-label="Minimize"></button>
                     <button aria-label="Maximize"></button>
@@ -18,23 +31,15 @@
                 </div>
             </div>
             <div class="window-body has-space">
-                <p>webpage is wip, uses 7.css for its style</p>
-
-                <section class="tabs">
-                    <menu role="tablist" aria-label="Tabs Template">
-                        <button role="tab" aria-controls="tab-A" aria-selected="true">Tab A</button>
-                        <button role="tab" aria-controls="tab-B">Tab B</button>
-                        <button role="tab" aria-controls="tab-C">Tab C</button>
-                        <button role="tab" aria-controls="tab-D" disabled="">Tab D</button>
-                    </menu>
-                    <article role="tabpanel" id="tab-A">Tab A is active</article>
-                    <article role="tabpanel" id="tab-B" hidden="">Tab B is active</article>
-                    <article role="tabpanel" id="tab-C" hidden="">Tab C is active</article>
-                    <article role="tabpanel" id="tab-D" hidden="">Tab D is inactive</article>
-                </section>
-
+                <img src="doudou7.png" alt="picture of a cool alien kitty" style="float: right">
+                <h3>Sir Blorpis III</h3>
+                <h5>text underneath the other text</h5>
             </div>
         </div>
+        <div role="tooltip" style="width: 170px; float: right top; z-index: 2; margin-left: 36%; margin-top: -9%; white-space: nowrap;">Currently Feeling: <a href="https://www.imood.com/users/christmaswreath"><img src="https://moods.imood.com/display/uname-christmaswreath/fg-000000/trans-1/imood.gif" alt="The current mood of christmaswreath at www.imood.com" border="0" style="height: 12"></a></div>
+    </div>
+
+
 </body>
     <script src="7.js"></script>
 </html>

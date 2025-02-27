@@ -53,6 +53,42 @@ body {
 }
 
 .mainContainer {
-    max-width: 45%;
+    width: 100%;
+    max-width: 810px; /* This is the width where it stops expanding */
+    height: 100vh;
+    box-sizing: border-box;
     margin-inline: auto;
+}
+
+.infoBox{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 100px;
+    right: 0;
+    max-width: 810px; /* This is the width where it stops expanding */
+    box-sizing: border-box;
+    margin-inline: auto;
+    vertical-align: top;
+}
+
+p,h1,h2,h3,h4,h5,h6,ul,ol {
+    margin-left: 5px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 1200px) {
+    .mainContainer,.infoBox {
+        width: 100%;
+        float: top;
+    }
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 768px) {
+
+    .window {
+        width: 100%;
+    }
 }
